@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe Portfolio</title>
+    <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+
+
+<!-- Navigation Bar -->
+<nav id="desktop-nav"><div class="logo">Arindu<span style="color: #e07a5f">Himeth</span></div><div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header id="profile">
+    <div class="intro">
+        <img src="Arindu.jpg" alt="Arindu himeth" class="profile-pic" />
+        <h1>Hi, I'm Arindu Himeth</h1>
+        <p>Arindu Himeth - Aspiring Full Stack Developer</p>
+        <div class="btn-container">
+            <button onclick="window.open('./resume.pdf')">Download CV</button>
+            <button onclick="location.href='#contact'">Contact Me</button>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm an enthusiastic developer passionate about creating scalable web
+        applications. I love exploring new technologies, solving problems, and
+        learning every step of the way.
+    </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript & React</li>
+        <li>Python</li>
+        <li>SQL</li>
+    </ul>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+            A clean, responsive website showcasing my work and skills. Built using
+            HTML, CSS, and JavaScript.
+        </p>
+        <button onclick="window.open('https://github.com')">View on GitHub</button>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Arindu Himeth. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
